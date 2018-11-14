@@ -14,6 +14,6 @@ data = open('os.txt', 'r')
 
 #bulk insert
 
-con.executemany("insert into Homes(Parcel, Name, Address, LandUseCode, SaleDate, SalePrice, TotalRecordCount) values (?,?,?,?,?,?,?)", Homes)
+c.executemany("insert into Homes(Parcel, Name, Address, LandUseCode, SaleDate, SalePrice, TotalRecordCount) values (?,?,?,?,?,?,?)", Homes)
 
 conn.close()
